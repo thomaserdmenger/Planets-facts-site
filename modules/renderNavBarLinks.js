@@ -10,30 +10,32 @@ export default function renderNavBarLinks(data) {
     // Create new list items
     data.forEach((item, index) => {
       // Create list items
+      const listContainerLeft = document.createElement("div");
       const listItem = document.createElement("li");
       const listText = document.createElement("span");
 
       navbarListEl.appendChild(listItem);
-
+      listItem.appendChild(listContainerLeft);
       listItem.classList.add("nav-links-list-items-container");
-      listItem.append(listText);
-
-      listText.textContent = item.name;
-      listText.classList.add("nav-links-list-items-text");
+      listContainerLeft.classList.add("nav-links-list-items-container-left");
 
       // Create planet circles
       const planets = document.createElement("div");
       planets.classList.add("nav-links-list-planets");
-      listItem.insertAdjacentElement("afterbegin", planets);
-      planets.style.color = colors[index].color;
 
       planets.style.backgroundColor = colors[index].color;
+      listContainerLeft.appendChild(planets);
+
+      // Create planet names
+      listText.textContent = item.name;
+      listText.classList.add("nav-links-list-items-text");
+      listContainerLeft.append(listText);
 
       // Add arrows
       const arrowEl = document.createElement("img");
       arrowEl.setAttribute("src", "./assets/icon-chevron.svg");
       arrowEl.classList.add("nav-links-list-items-arrows");
-      listItem.insertAdjacentElement("beforeend", arrowEl);
+      listItem.appendChild(arrowEl);
     });
   }
 
