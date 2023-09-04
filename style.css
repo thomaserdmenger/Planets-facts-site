@@ -45,7 +45,6 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
-  margin-bottom: 1.5rem;
   padding: 1rem 1.5rem;
 }
 
@@ -67,6 +66,10 @@ body {
   justify-content: space-between;
   padding: 1.25rem 2rem 1.25rem 1.5rem;
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+}
+
+.nav-links-list-items-container:first-of-type {
+  padding-top: 2.5rem;
 }
 
 .nav-links-list-items-container:last-of-type {
@@ -104,6 +107,7 @@ body {
 
 .nav-links-container-mobile {
   display: none;
+  background-color: var(--color-black-background);
 }
 
 .nav-links-container-mobile--show {
