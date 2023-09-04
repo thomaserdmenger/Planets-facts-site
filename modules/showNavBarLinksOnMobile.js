@@ -5,5 +5,6 @@ const navBarMobile = document.querySelector(".nav-links-container-mobile");
 export default function showNavBarLinksOnMobile() {
   hamburgerMenu.addEventListener("click", () => {
     navBarMobile.classList.toggle("nav-links-container-mobile--show");
+    hamburgerMenu.classList.toggle("nav-hamburger--opacity");
   });
 }

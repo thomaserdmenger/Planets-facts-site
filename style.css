@@ -7,6 +7,15 @@
   }
 }
 
+@keyframes slideOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2487;
+  }
+}
+
 :root {
   --color-black-background: #070724;
   --color-text-default: #ffffff;
@@ -83,7 +92,12 @@ body {
 }
 
 .nav-hamburger {
+  opacity: 1;
+}
+
+.nav-hamburger--opacity {
   opacity: 0.2487;
+  animation: slideOut 1s;
 }
 
 .nav-links-container-mobile {
