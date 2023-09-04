@@ -125,6 +125,10 @@ body {
   padding: 0 1.5rem;
 }
 
+.planets-main-container--hide {
+  display: none;
+}
+
 .planet-image-container {
   width: 100%;
   display: flex;
