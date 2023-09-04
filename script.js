@@ -1,6 +1,7 @@
 // Imports
-import renderNavBarLinks from "./modules/renderNavBarLinks.js";
+import renderNavBarLinksOnMobile from "./modules/renderNavBarLinksOnMobile.js";
 import showNavBarLinksOnMobile from "./modules/showNavBarLinksOnMobile.js";
+import renderNavBarLinksOnTablet from "./modules/renderNavBarLinksOnTablet.js";
 
 // Get data from data.json
 async function fetchData() {
@@ -15,8 +16,9 @@ async function fetchData() {
 
     const data = await response.json();
 
-    renderNavBarLinks(data);
+    renderNavBarLinksOnMobile(data);
     showNavBarLinksOnMobile();
+    renderNavBarLinksOnTablet(data);
   } catch (error) {
     console.error(error.message);
   }

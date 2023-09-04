@@ -1,7 +1,7 @@
 // Get DOM elements
 const navbarListEl = document.querySelector(".nav-links-list");
 
-export default function renderNavBarLinks(data) {
+export default function renderNavBarLinksOnMobile(data) {
   // Fetch colors for planet circles
   async function fetchColors() {
     const response = await fetch("./colors.json");

@@ -83,3 +83,46 @@ body {
 .nav-links-container-mobile--show {
   display: block;
 }
+
+.nav-links-container-tablet {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+    padding: 2rem 3.25rem 1.6875rem 3.25rem;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-hamburger {
+    display: none;
+  }
+
+  .nav-links-container-tablet {
+    display: block;
+  }
+
+  .nav-links-list-tablet {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100vw;
+    padding: 0 3.25rem;
+    margin-top: 2.4375rem;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    line-height: 1.5625rem;
+    letter-spacing: 0.0625rem;
+  }
+
+  .nav-links-container-tablet li {
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+}
