@@ -119,6 +119,93 @@ body {
   display: none;
 }
 
+/*********************************************************** Main Content */
+.planets-main-container {
+  position: relative;
+  padding: 0 1.5rem;
+}
+
+.planet-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.planet-image-mercury {
+  width: 111px;
+  height: 111px;
+  margin-top: 146px;
+  margin-bottom: 98px;
+}
+
+.planets-wrapper {
+  display: flex;
+}
+
+.planets-menu {
+  position: absolute;
+  top: 1.25rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.planets-menu-items {
+  cursor: pointer;
+  padding-bottom: 1.0625rem;
+}
+
+.planets-menu-items:active {
+  border-bottom: 3px solid #419ebb;
+  padding-bottom: 1.0625rem;
+}
+
+.planets-content-container {
+  text-align: center;
+}
+
+.planets-heading {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: var(--font-antonio);
+  font-size: 400;
+  margin-bottom: 1rem;
+}
+
+.planets-text {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  margin-bottom: 2rem;
+}
+
+.planets-source {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  line-height: 25px;
+  opacity: 0.5;
+}
+
+.planets-source a {
+  all: unset;
+}
+
+.planets-source span {
+  margin: 0 4px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.planets-source img {
+  margin-bottom: -3px;
+  opacity: 1;
+}
+
 /*********************************************************** TABLET */
 @media only screen and (min-width: 768px) {
   /*********************************************************** Nav Bar */
