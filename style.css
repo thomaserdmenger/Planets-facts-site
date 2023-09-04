@@ -101,6 +101,7 @@ body {
 
 /*********************************************************** TABLET */
 @media only screen and (min-width: 768px) {
+  /*********************************************************** Nav Bar */
   .nav-container {
     display: flex;
     justify-content: center;
@@ -108,7 +109,6 @@ body {
     border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
     padding: 2rem 3.25rem 1.6875rem 3.25rem;
     flex-direction: column;
-    width: 100%;
   }
 
   .nav-hamburger {
@@ -140,3 +140,25 @@ body {
 }
 
 /*********************************************************** DESKTOP */
+
+@media only screen and (min-width: 1440px) {
+  /*********************************************************** Nav Bar */
+  .nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* border-bottom: 1px solid hsla(0, 0%, 100%, 0.2); */
+    padding: 1.375rem 2rem 1.6875rem 2rem;
+  }
+
+  .nav-links-list-tablet {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links-list-tablet li {
+    margin-left: 2.0625rem;
+  }
+}
