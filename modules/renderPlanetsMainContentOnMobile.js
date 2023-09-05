@@ -36,7 +36,51 @@ export default async function renderPlanetsMainContentOnMobile() {
       // Add Planet Images
       planetsImgaes.setAttribute("src", item.images.planet);
 
-      // TODO: Add different image sizes and margin bottom and top
+      // TODO: Submenu on load border buttom overview
+
+      // Add different image sizes and margin bottom and top
+      switch (item.name) {
+        case "Mercury":
+          planetsImgaes.className = "";
+          planetsImgaes.classList.add("planet-image");
+          planetsImgaes.classList.add("planet-image-mercury");
+          break;
+        case "Venus":
+          planetsImgaes.className = "";
+          planetsImgaes.classList.add("planet-image");
+          planetsImgaes.classList.add("planet-image-venus");
+          break;
+        case "Earth":
+          planetsImgaes.className = "";
+          planetsImgaes.classList.add("planet-image");
+          planetsImgaes.classList.add("planet-image-earth");
+          break;
+        case "Mars":
+          planetsImgaes.className = "";
+          planetsImgaes.classList.add("planet-image");
+          planetsImgaes.classList.add("planet-image-mars");
+          break;
+        case "Jupiter":
+          planetsImgaes.className = "";
+          planetsImgaes.classList.add("planet-image");
+          planetsImgaes.classList.add("planet-image-jupiter");
+          break;
+        case "Saturn":
+          planetsImgaes.className = "";
+          planetsImgaes.classList.add("planet-image");
+          planetsImgaes.classList.add("planet-image-saturn");
+          break;
+        case "Uranus":
+          planetsImgaes.className = "";
+          planetsImgaes.classList.add("planet-image");
+          planetsImgaes.classList.add("planet-image-uranus");
+          break;
+        case "Neptune":
+          planetsImgaes.className = "";
+          planetsImgaes.classList.add("planet-image");
+          planetsImgaes.classList.add("planet-image-neptune");
+          break;
+      }
     });
   });
 }
