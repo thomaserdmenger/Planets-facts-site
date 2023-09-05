@@ -1,8 +1,9 @@
 // Get DOM Elements
 const navBarMobile = document.querySelector(".nav-links-container-mobile");
 const navBarLinksOnMobile = document.querySelector(".nav-links-list");
-const planetsHeading = document.querySelector(".planets-heading");
 const mainContent = document.querySelector(".planets-main-container");
+const planetsHeading = document.querySelector(".planets-heading");
+const planetsText = document.querySelector(".planets-text");
 
 // Render main content
 export default async function renderPlanetsMainContentOnMobile() {
@@ -13,11 +14,15 @@ export default async function renderPlanetsMainContentOnMobile() {
     data.forEach((item) => {
       if (e.target.textContent !== item.name) return;
 
-      planetsHeading.textContent = e.target.textContent;
+      // Hide Menu and show main content after click
       navBarMobile.classList.remove("nav-links-container-mobile--show");
       mainContent.classList.remove("planets-main-container--hide");
-    });
 
-    // console.log(e.target.textContent);
+      // Render Planet Names on Screen
+      planetsHeading.textContent = e.target.textContent;
+
+      // Render Planet Description on Screen
+      planetsText.textContent = item.overview.content;
+    });
   });
 }
