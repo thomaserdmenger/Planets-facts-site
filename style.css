@@ -171,6 +171,11 @@ body {
   padding-bottom: 1.0625rem;
 }
 
+.planets-menu-one--active {
+  border-bottom: 3px solid #419ebb;
+  padding-bottom: 1.0625rem;
+}
+
 .planets-content-container {
   text-align: center;
 }
@@ -189,7 +194,7 @@ body {
   margin-bottom: 2rem;
 }
 
-.planets-source {
+.planets-source-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -198,17 +203,17 @@ body {
   opacity: 0.5;
 }
 
-.planets-source a {
+.planets-source-container a {
   all: unset;
 }
 
-.planets-source span {
+.planets-source-container span {
   margin: 0 4px;
   font-weight: 700;
   text-decoration: underline;
 }
 
-.planets-source img {
+.planets-source-container img {
   margin-bottom: -3px;
   opacity: 1;
 }
