@@ -123,6 +123,7 @@ body {
 .planets-main-container {
   position: relative;
   padding: 0 1.5rem;
+  width: 100%;
 }
 
 .planets-main-container--hide {
@@ -144,6 +145,8 @@ body {
 
 .planets-wrapper {
   display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .planets-menu {
