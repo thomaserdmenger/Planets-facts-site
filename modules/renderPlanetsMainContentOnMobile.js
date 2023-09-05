@@ -6,6 +6,7 @@ const planetsHeading = document.querySelector(".planets-heading");
 const planetsText = document.querySelector(".planets-text");
 const planetsSource = document.querySelector(".planets-source");
 const planetsMenuOne = document.querySelector(".planets-menu-one");
+const planetsImgaes = document.querySelector(".planet-image");
 
 // Render main content
 export default async function renderPlanetsMainContentOnMobile() {
@@ -31,6 +32,11 @@ export default async function renderPlanetsMainContentOnMobile() {
 
       // Add Border Buttom to Overview in Submenu
       planetsMenuOne.classList.add("planets-menu-one--active");
+
+      // Add Planet Images
+      planetsImgaes.setAttribute("src", item.images.planet);
+
+      // TODO: Add different image sizes and margin bottom and top
     });
   });
 }
