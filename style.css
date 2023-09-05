@@ -215,6 +215,11 @@ body {
   padding-bottom: 1.0625rem;
 }
 
+.planets-menu-items:first-of-type {
+  border-bottom: 3px solid #419ebb;
+  padding-bottom: 1.0625rem;
+}
+
 .planets-menu-items:active {
   border-bottom: 3px solid #419ebb;
   padding-bottom: 1.0625rem;

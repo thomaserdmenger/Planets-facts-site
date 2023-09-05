@@ -36,8 +36,6 @@ export default async function renderPlanetsMainContentOnMobile() {
       // Add Planet Images
       planetsImgaes.setAttribute("src", item.images.planet);
 
-      // TODO: Submenu on load border buttom overview
-
       // Add different image sizes and margin bottom and top
       switch (item.name) {
         case "Mercury":
@@ -81,6 +79,8 @@ export default async function renderPlanetsMainContentOnMobile() {
           planetsImgaes.classList.add("planet-image-neptune");
           break;
       }
+
+      // TODO: Add different color on border buttom on sub menu
     });
   });
 }
