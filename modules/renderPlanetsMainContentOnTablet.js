@@ -5,7 +5,7 @@ const planetsHeading = document.querySelector(".planets-heading");
 const planetsText = document.querySelector(".planets-text");
 const planetsSource = document.querySelector(".planets-source");
 const planetsMenuOne = document.querySelector(".planets-menu-one");
-const planetsImgaes = document.querySelector(".planet-image");
+const planetsImgages = document.querySelector(".planet-image");
 
 export default async function renderPlanetsMainContentOnTablet() {
   const response = await fetch("./data.json");
@@ -25,50 +25,97 @@ export default async function renderPlanetsMainContentOnTablet() {
       planetsSource.setAttribute("href", item.overview.source);
 
       // TODO: // Add Border and Background-Color to Overwiev menu
-      planetsImgaes.setAttribute("src", item.images.planet);
+      planetsImgages.setAttribute("src", item.images.planet);
 
       // Add different image sizes and margin bottom and top
-      switch (item.name) {
-        case "Mercury":
-          planetsImgaes.className = "";
-          planetsImgaes.classList.add("planet-image");
-          planetsImgaes.classList.add("planet-image-mercury--tablet");
-          break;
-        case "Venus":
-          planetsImgaes.className = "";
-          planetsImgaes.classList.add("planet-image");
-          planetsImgaes.classList.add("planet-image-venus--tablet");
-          break;
-        case "Earth":
-          planetsImgaes.className = "";
-          planetsImgaes.classList.add("planet-image");
-          planetsImgaes.classList.add("planet-image-earth--tablet");
-          break;
-        case "Mars":
-          planetsImgaes.className = "";
-          planetsImgaes.classList.add("planet-image");
-          planetsImgaes.classList.add("planet-image-mars--tablet");
-          break;
-        case "Jupiter":
-          planetsImgaes.className = "";
-          planetsImgaes.classList.add("planet-image");
-          planetsImgaes.classList.add("planet-image-jupiter--tablet");
-          break;
-        case "Saturn":
-          planetsImgaes.className = "";
-          planetsImgaes.classList.add("planet-image");
-          planetsImgaes.classList.add("planet-image-saturn--tablet");
-          break;
-        case "Uranus":
-          planetsImgaes.className = "";
-          planetsImgaes.classList.add("planet-image");
-          planetsImgaes.classList.add("planet-image-uranus--tablet");
-          break;
-        case "Neptune":
-          planetsImgaes.className = "";
-          planetsImgaes.classList.add("planet-image");
-          planetsImgaes.classList.add("planet-image-neptune--tablet");
-          break;
+      if (window.innerWidth >= 768) {
+        switch (item.name) {
+          case "Mercury":
+            planetsImgages.className = "";
+            planetsImgages.classList.add("planet-image");
+            planetsImgages.classList.add("planet-image-mercury--tablet");
+            break;
+          case "Venus":
+            planetsImgages.className = "";
+            planetsImgages.classList.add("planet-image");
+            planetsImgages.classList.add("planet-image-venus--tablet");
+            break;
+          case "Earth":
+            planetsImgages.className = "";
+            planetsImgages.classList.add("planet-image");
+            planetsImgages.classList.add("planet-image-earth--tablet");
+            break;
+          case "Mars":
+            planetsImgages.className = "";
+            planetsImgages.classList.add("planet-image");
+            planetsImgages.classList.add("planet-image-mars--tablet");
+            break;
+          case "Jupiter":
+            planetsImgages.className = "";
+            planetsImgages.classList.add("planet-image");
+            planetsImgages.classList.add("planet-image-jupiter--tablet");
+            break;
+          case "Saturn":
+            planetsImgages.className = "";
+            planetsImgages.classList.add("planet-image");
+            planetsImgages.classList.add("planet-image-saturn--tablet");
+            break;
+          case "Uranus":
+            planetsImgages.className = "";
+            planetsImgages.classList.add("planet-image");
+            planetsImgages.classList.add("planet-image-uranus--tablet");
+            break;
+          case "Neptune":
+            planetsImgages.className = "";
+            planetsImgages.classList.add("planet-image");
+            planetsImgages.classList.add("planet-image-neptune--tablet");
+            break;
+        }
+      }
+
+      if (window.innerWidth >= 1440) {
+        switch (item.name) {
+          case "Mercury":
+            planetsImgages.className = "";
+            planetsImgages.classList.add("planet-image");
+            planetsImgages.classList.add("planet-image-mercury--desktop");
+            break;
+          case "Venus":
+            planetsImgages.className = "";
+            planetsImgages.classList.add("planet-image");
+            planetsImgages.classList.add("planet-image-venus--desktop");
+            break;
+          case "Earth":
+            planetsImgages.className = "";
+            planetsImgages.classList.add("planet-image");
+            planetsImgages.classList.add("planet-image-earth--desktop");
+            break;
+          case "Mars":
+            planetsImgages.className = "";
+            planetsImgages.classList.add("planet-image");
+            planetsImgages.classList.add("planet-image-mars--desktop");
+            break;
+          case "Jupiter":
+            planetsImgages.className = "";
+            planetsImgages.classList.add("planet-image");
+            planetsImgages.classList.add("planet-image-jupiter--desktop");
+            break;
+          case "Saturn":
+            planetsImgages.className = "";
+            planetsImgages.classList.add("planet-image");
+            planetsImgages.classList.add("planet-image-saturn--desktop");
+            break;
+          case "Uranus":
+            planetsImgages.className = "";
+            planetsImgages.classList.add("planet-image");
+            planetsImgages.classList.add("planet-image-uranus--desktop");
+            break;
+          case "Neptune":
+            planetsImgages.className = "";
+            planetsImgages.classList.add("planet-image");
+            planetsImgages.classList.add("planet-image-neptune--desktop");
+            break;
+        }
       }
     });
   });

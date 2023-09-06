@@ -336,7 +336,6 @@ body {
 
   .planets-content-container {
     text-align: left;
-    /* width: 21.1875rem; */
     width: 50%;
     margin-right: 4.3125rem;
   }
@@ -472,5 +471,111 @@ body {
 
   .nav-links-list-tablet li {
     margin-left: 2.0625rem;
+  }
+
+  /*********************************************************** Main Content */
+
+  .planets-main-container {
+    display: flex;
+    justify-content: center;
+    padding: 0 10.3125rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .planets-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 45%;
+  }
+
+  .planets-content-container {
+    text-align: left;
+    width: 100%;
+    margin-right: 0;
+    margin-top: 7.875rem;
+  }
+
+  .planets-heading {
+    font-size: 5rem;
+    margin-bottom: 1.4375rem;
+  }
+
+  .planets-text {
+    margin-bottom: 1.5rem;
+  }
+
+  .planet-image-container {
+    padding-right: 7rem;
+  }
+
+  .planet-image-mercury {
+    width: 290px;
+    height: 290px;
+    margin-top: 242px;
+    margin-bottom: 0;
+  }
+
+  .planet-image-mercury--desktop {
+    width: 290px;
+    height: 290px;
+    margin-top: 242px;
+    margin-bottom: 0;
+  }
+
+  .planet-image-venus--desktop {
+    width: 400px;
+    height: 400px;
+    margin-top: 187px;
+    margin-bottom: 0;
+  }
+
+  .planet-image-earth--desktop {
+    width: 450px;
+    height: 450px;
+    margin-top: 162px;
+    margin-bottom: 0;
+  }
+
+  .planet-image-mars--desktop {
+    width: 336px;
+    height: 336px;
+    margin-top: 219px;
+    margin-bottom: 0;
+  }
+
+  .planet-image-jupiter--desktop {
+    width: 582px;
+    height: 582px;
+    margin-top: 96px;
+    margin-bottom: 0;
+  }
+
+  .planet-image-saturn--desktop {
+    width: 666px;
+    height: 666px;
+    margin-top: 70px;
+    margin-bottom: 0;
+  }
+
+  .planet-image-uranus--desktop {
+    width: 458px;
+    height: 458px;
+    margin-top: 158px;
+    margin-bottom: 0;
+  }
+
+  .planet-image-neptune--desktop {
+    width: 450px;
+    height: 450px;
+    margin-top: 162px;
+    margin-bottom: 0;
+  }
+
+  .planets-menu {
+    width: 100%;
+    padding: 0;
+    margin-top: 2.4375rem;
   }
 }
