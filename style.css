@@ -393,6 +393,62 @@ body {
     display: inline-block;
     margin-right: 1.0625rem;
   }
+
+  .planet-image-mercury--tablet {
+    width: 184px;
+    height: 184px;
+    margin-top: 146px;
+    margin-bottom: 130px;
+  }
+
+  .planet-image-venus--tablet {
+    width: 253px;
+    height: 253px;
+    margin-top: 112px;
+    margin-bottom: 95px;
+  }
+
+  .planet-image-earth--tablet {
+    width: 285px;
+    height: 285px;
+    margin-top: 96px;
+    margin-bottom: 79px;
+  }
+
+  .planet-image-mars--tablet {
+    width: 213px;
+    height: 213px;
+    margin-top: 132px;
+    margin-bottom: 115px;
+  }
+
+  .planet-image-jupiter--tablet {
+    width: 369px;
+    height: 369px;
+    margin-top: 54px;
+    margin-bottom: 37px;
+  }
+
+  .planet-image-saturn--tablet {
+    width: 422px;
+    height: 422px;
+    margin-top: 27px;
+    margin-bottom: 11px;
+  }
+
+  .planet-image-uranus--tablet {
+    width: 290px;
+    height: 290px;
+    margin-top: 93px;
+    margin-bottom: 77px;
+  }
+
+  .planet-image-neptune--tablet {
+    width: 285px;
+    height: 285px;
+    margin-top: 96px;
+    margin-bottom: 79px;
+  }
 }
 
 /*********************************************************** DESKTOP */
