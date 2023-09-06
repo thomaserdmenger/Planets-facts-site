@@ -210,6 +210,10 @@ body {
   padding: 0 1.5rem 0 1.5rem;
 }
 
+.planets-menu-items-numbers {
+  display: none;
+}
+
 .planets-menu-items {
   cursor: pointer;
   padding-bottom: 1.0625rem;
@@ -309,6 +313,85 @@ body {
     display: inline-block;
     cursor: pointer;
     text-transform: uppercase;
+  }
+
+  /*********************************************************** Main Content */
+
+  .planets-main-container {
+    padding: 0 2.5rem;
+  }
+
+  .planets-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .planet-image-mercury {
+    width: 184px;
+    height: 184px;
+    margin-top: 146px;
+    margin-bottom: 130px;
+  }
+
+  .planets-content-container {
+    text-align: left;
+    /* width: 21.1875rem; */
+    width: 50%;
+    margin-right: 4.3125rem;
+  }
+
+  .planets-heading {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .planets-text {
+    font-size: 0.875rem;
+  }
+
+  .planets-source-container {
+    justify-content: flex-start;
+  }
+
+  .planets-menu {
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 40%;
+    padding: 0;
+    border-bottom: none;
+    padding-top: 3rem;
+  }
+
+  .planets-menu-items:first-of-type {
+    border-bottom: none;
+    padding: 0.5rem 0 0.5rem 1.25rem;
+  }
+
+  .planets-menu-items:active {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .planets-menu-one--active {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .planets-menu-items {
+    padding: 0;
+    padding: 0.5rem 0 0.5rem 1.25rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 2.571px;
+    border: 1px solid hsla(0, 0%, 100%, 0.2);
+  }
+
+  .planets-menu-items-numbers {
+    display: inline-block;
+    margin-right: 1.0625rem;
   }
 }
 

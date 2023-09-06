@@ -3,6 +3,7 @@ import renderNavBarLinksOnMobile from "./modules/renderNavBarLinksOnMobile.js";
 import showNavBarLinksOnMobile from "./modules/showNavBarLinksOnMobile.js";
 import renderNavBarLinksOnTablet from "./modules/renderNavBarLinksOnTablet.js";
 import renderPlanetsMainContentOnMobile from "./modules/renderPlanetsMainContentOnMobile.js";
+import resetSettingsOnTablet from "./modules/resetSettingsOnTablet.js";
 
 // Get data from data.json
 async function fetchData() {
@@ -19,8 +20,10 @@ async function fetchData() {
 
     renderNavBarLinksOnMobile(data);
     showNavBarLinksOnMobile();
-    renderNavBarLinksOnTablet(data);
     renderPlanetsMainContentOnMobile(data);
+
+    renderNavBarLinksOnTablet(data);
+    resetSettingsOnTablet();
   } catch (error) {
     console.error(error.message);
   }
