@@ -6,6 +6,7 @@ import renderPlanetsMainContentOnMobile from "./modules/renderPlanetsMainContent
 import resetSettingsOnTablet from "./modules/resetSettingsOnTablet.js";
 import renderPlanetsMainContentOnTablet from "./modules/renderPlanetsMainContentOnTablet.js";
 import renderStatsOnMobile from "./modules/renderStatsOnMobile.js";
+import renderStatsOnTablet from "./modules/renderStatsOnTablet.js";
 
 // Get data from data.json
 async function fetchData() {
@@ -28,6 +29,7 @@ async function fetchData() {
     renderNavBarLinksOnTablet(data);
     resetSettingsOnTablet();
     renderStatsOnMobile(data);
+    renderStatsOnTablet(data);
   } catch (error) {
     console.error(error.message);
   }

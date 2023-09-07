@@ -263,6 +263,7 @@ body {
 
 .planets-source-container a {
   all: unset;
+  cursor: pointer;
 }
 
 .planets-source-container span {
