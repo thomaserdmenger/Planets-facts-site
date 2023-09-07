@@ -532,7 +532,6 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    /* border-bottom: 1px solid hsla(0, 0%, 100%, 0.2); */
     padding: 1.375rem 2rem 1.6875rem 2rem;
   }
 
@@ -650,5 +649,57 @@ body {
     width: 100%;
     padding: 0;
     margin-top: 2.4375rem;
+  }
+
+  .planets-menu-items {
+    margin-bottom: 1.5rem;
+    padding: 0.75rem 0 0.75rem 1.625rem;
+    border: 1px solid hsla(0, 0%, 100%, 0.2);
+  }
+
+  .planets-menu-items:first-of-type {
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+    padding: 0.75rem 0 0.75rem 1.625rem;
+  }
+
+  .planets-menu-items:active {
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+    padding: 0.75rem 0 0.75rem 1.625rem;
+  }
+
+  .planets-menu-one--active {
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+    padding: 0.75rem 0 0.75rem 1.625rem;
+  }
+
+  .planets-menu-three {
+    margin-bottom: 5.4375rem;
+  }
+
+  /*********************************************************** Stats */
+
+  .stats-main-container {
+    padding: 0 10.3125rem;
+  }
+
+  .stats-container {
+    padding: 1.25rem 0 1.6875rem 1.4375rem;
+    margin-right: 1.875rem;
+  }
+
+  .stats-container:last-of-type {
+    margin-right: 0;
+  }
+
+  .stats-titles {
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+
+  .stats-numbers {
+    font-size: 2.5rem;
+    letter-spacing: -1.5px;
   }
 }
