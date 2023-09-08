@@ -7,6 +7,11 @@ import resetSettingsOnTablet from "./modules/resetSettingsOnTablet.js";
 import renderPlanetsMainContentOnTablet from "./modules/renderPlanetsMainContentOnTablet.js";
 import renderStatsOnMobile from "./modules/renderStatsOnMobile.js";
 import renderStatsOnTablet from "./modules/renderStatsOnTablet.js";
+import {
+  renderPlanetsStructures,
+  renderPlanetsDefault,
+  renderPlanetsGeology,
+} from "./modules/renderPlanetsStructures.js";
 
 // Get data from data.json
 async function fetchData() {
@@ -30,6 +35,10 @@ async function fetchData() {
     resetSettingsOnTablet();
     renderStatsOnMobile(data);
     renderStatsOnTablet(data);
+    renderPlanetsDefault(data);
+
+    renderPlanetsStructures(data);
+    renderPlanetsGeology(data);
   } catch (error) {
     console.error(error.message);
   }

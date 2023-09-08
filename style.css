@@ -136,6 +136,17 @@ body {
   justify-content: center;
 }
 
+.planet-image-geology {
+  position: absolute;
+  width: 50px;
+  top: 230px;
+  display: none;
+}
+
+.planet-image {
+  position: relative;
+}
+
 .planet-image-mercury {
   width: 111px;
   height: 111px;
