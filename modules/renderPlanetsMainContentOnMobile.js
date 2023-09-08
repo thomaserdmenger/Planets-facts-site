@@ -20,7 +20,10 @@ export default async function renderPlanetsMainContentOnMobile() {
       if (e.target.textContent !== item.name) return;
 
       // Reset Planets
-      planetImageGeology.style.display = "none";
+      planetImageGeology.classList.remove("planet-image-geology--mobile");
+      planetImageGeology.classList.remove("planet-image-geology--tablet");
+      planetImageGeology.classList.remove("planet-image-geology--desktop");
+
       planetImages.setAttribute("src", item.images.planet);
 
       // Hide Menu and show main content after click

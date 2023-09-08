@@ -1,13 +1,15 @@
 // Get DOM element
 const planetImages = document.querySelector(".planet-image");
-const planetImageGeology = document.querySelector(".planet-image-geology");
 const planetName = document.querySelector(".planets-heading");
+
+const planetImageGeology = document.querySelector(".planet-image-geology");
+const planetImageGeologyTablet = document.querySelector(
+  ".planet-image-geology--tablet"
+);
 
 const planetMenuStructureContainer =
   document.querySelector(".planets-menu-two");
-
 const planetMenuDefaultContainer = document.querySelector(".planets-menu-one");
-
 const planetMenuGeologyContainer = document.querySelector(
   ".planets-menu-three"
 );
@@ -20,7 +22,9 @@ export function renderPlanetsStructures(data) {
       }
 
       planetImages.setAttribute("src", item.images.internal);
-      planetImageGeology.style.display = "none";
+      planetImageGeology.classList.remove("planet-image-geology--mobile");
+      planetImageGeology.classList.remove("planet-image-geology--tablet");
+      planetImageGeology.classList.remove("planet-image-geology--desktop");
     });
   });
 }
@@ -34,7 +38,9 @@ export function renderPlanetsDefault(data) {
       }
 
       planetImages.setAttribute("src", item.images.planet);
-      planetImageGeology.style.display = "none";
+      planetImageGeology.classList.remove("planet-image-geology--mobile");
+      planetImageGeology.classList.remove("planet-image-geology--tablet");
+      planetImageGeology.classList.remove("planet-image-geology--desktop");
     });
   });
 }
@@ -47,9 +53,21 @@ export function renderPlanetsGeology(data) {
         return;
       }
 
+      planetImageGeology.classList.add("planet-image-geology--mobile");
       planetImages.setAttribute("src", item.images.planet);
       planetImageGeology.setAttribute("src", item.images.geology);
-      planetImageGeology.style.display = "block";
+      planetImageGeology.classList.remove("planet-image-geology--tablet");
+      planetImageGeology.classList.remove("planet-image-geology--desktop");
+
+      if (window.innerWidth >= 768) {
+        planetImageGeology.classList.remove("planet-image-geology--mobile");
+        planetImageGeology.classList.remove("planet-image-geology--desktop");
+        planetImageGeology.classList.add("planet-image-geology--tablet");
+      }
+
+      if (window.innerWidth >= 1440) {
+        planetImageGeology.classList.add("planet-image-geology--desktop");
+      }
     });
   });
 }

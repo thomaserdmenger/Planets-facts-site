@@ -136,11 +136,25 @@ body {
   justify-content: center;
 }
 
-.planet-image-geology {
+.planet-image-geology--mobile {
   position: absolute;
   width: 50px;
   top: 230px;
-  display: none;
+  display: block;
+}
+
+.planet-image-geology--tablet {
+  position: absolute;
+  width: 80px;
+  top: 290px;
+  display: block;
+}
+
+.planet-image-geology--desktop {
+  position: absolute;
+  width: 158px;
+  top: 470px;
+  display: block;
 }
 
 .planet-image {

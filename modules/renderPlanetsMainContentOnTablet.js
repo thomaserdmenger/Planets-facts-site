@@ -6,6 +6,8 @@ const planetsText = document.querySelector(".planets-text");
 const planetsSource = document.querySelector(".planets-source");
 const planetsMenuOne = document.querySelector(".planets-menu-one");
 const planetsImgages = document.querySelector(".planet-image");
+const planetImageGeology = document.querySelector(".planet-image-geology");
+const planetImages = document.querySelector(".planet-image");
 
 export default async function renderPlanetsMainContentOnTablet() {
   const response = await fetch("./data.json");
@@ -14,6 +16,13 @@ export default async function renderPlanetsMainContentOnTablet() {
   navBarLinksInTablet.addEventListener("click", (e) => {
     data.forEach((item) => {
       if (e.target.textContent !== item.name) return;
+
+      // Reset Planets
+      planetImageGeology.classList.remove("planet-image-geology--mobile");
+      planetImageGeology.classList.remove("planet-image-geology--tablet");
+      planetImageGeology.classList.remove("planet-image-geology--desktop");
+
+      planetImages.setAttribute("src", item.images.planet);
 
       // Render Planet Names on Screen
       planetsHeading.textContent = e.target.textContent;
