@@ -387,7 +387,8 @@ body {
   .planets-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .planet-image-mercury {
