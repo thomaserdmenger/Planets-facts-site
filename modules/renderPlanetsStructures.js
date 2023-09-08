@@ -1,14 +1,19 @@
 // Get DOM element
 const planetImages = document.querySelector(".planet-image");
-const planetMenuDefault = document.querySelector(".planets-menu-one-text");
-const planetMenuStructure = document.querySelector(".planets-menu-two-text");
-const planetMenuGeology = document.querySelector(".planets-menu-three-text");
 const planetImageGeology = document.querySelector(".planet-image-geology");
 const planetName = document.querySelector(".planets-heading");
 
-// Render Internal Structure
+const planetMenuStructureContainer =
+  document.querySelector(".planets-menu-two");
+
+const planetMenuDefaultContainer = document.querySelector(".planets-menu-one");
+
+const planetMenuGeologyContainer = document.querySelector(
+  ".planets-menu-three"
+);
+
 export function renderPlanetsStructures(data) {
-  planetMenuStructure.addEventListener("click", () => {
+  planetMenuStructureContainer.addEventListener("click", () => {
     data.forEach((item) => {
       if (item.name.toLowerCase() !== planetName.textContent.toLowerCase()) {
         return;
@@ -22,7 +27,7 @@ export function renderPlanetsStructures(data) {
 
 // Render Default Planets
 export function renderPlanetsDefault(data) {
-  planetMenuDefault.addEventListener("click", () => {
+  planetMenuDefaultContainer.addEventListener("click", () => {
     data.forEach((item) => {
       if (planetName.textContent.toLowerCase() !== item.name.toLowerCase()) {
         return;
@@ -36,7 +41,7 @@ export function renderPlanetsDefault(data) {
 
 // Render Planets Geology
 export function renderPlanetsGeology(data) {
-  planetMenuGeology.addEventListener("click", () => {
+  planetMenuGeologyContainer.addEventListener("click", () => {
     data.forEach((item) => {
       if (planetName.textContent.toLowerCase() !== item.name.toLowerCase()) {
         return;
