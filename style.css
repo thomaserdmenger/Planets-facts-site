@@ -244,19 +244,40 @@ body {
   padding-bottom: 1.0625rem;
 }
 
+.planets-menu-one-text {
+  border-bottom: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #419ebb;
+  padding-bottom: 0.9rem;
+}
+
+.planets-menu-two-text {
+  border-bottom: 3px;
+  border-bottom-style: none;
+  border-bottom-color: none;
+  padding-bottom: 0.9rem;
+}
+
+.planets-menu-three-text {
+  border-bottom: 3px;
+  border-bottom-style: none;
+  border-bottom-color: none;
+  padding-bottom: 0.9rem;
+}
+
 .planets-menu-items:first-of-type {
-  border-bottom: 3px solid #419ebb;
-  padding-bottom: 1.0625rem;
+  /* border-bottom: 3px solid #419ebb; */
+  /* padding-bottom: 1.0625rem; */
 }
 
 .planets-menu-items:active {
-  border-bottom: 3px solid #419ebb;
-  padding-bottom: 1.0625rem;
+  /* border-bottom: 3px solid #419ebb; */
+  /* padding-bottom: 1.0625rem; */
 }
 
 .planets-menu-one--active {
-  border-bottom: 3px solid #419ebb;
-  padding-bottom: 1.0625rem;
+  /* border-bottom: 3px solid #419ebb; */
+  /* padding-bottom: 1.0625rem; */
 }
 
 .planets-content-container {

@@ -3,9 +3,6 @@ const planetImages = document.querySelector(".planet-image");
 const planetName = document.querySelector(".planets-heading");
 
 const planetImageGeology = document.querySelector(".planet-image-geology");
-const planetImageGeologyTablet = document.querySelector(
-  ".planet-image-geology--tablet"
-);
 
 const planetMenuStructureContainer =
   document.querySelector(".planets-menu-two");
@@ -14,6 +11,7 @@ const planetMenuGeologyContainer = document.querySelector(
   ".planets-menu-three"
 );
 
+// Render Planets Structure
 export function renderPlanetsStructures(data) {
   planetMenuStructureContainer.addEventListener("click", () => {
     data.forEach((item) => {

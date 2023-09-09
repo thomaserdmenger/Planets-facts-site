@@ -12,6 +12,7 @@ import {
   renderPlanetsDefault,
   renderPlanetsGeology,
 } from "./modules/renderPlanetsStructures.js";
+import renderBorderColorsOnMobile from "./modules/renderBorderColorsOnMobile.js";
 
 // Get data from data.json
 async function fetchData() {
@@ -39,6 +40,7 @@ async function fetchData() {
 
     renderPlanetsStructures(data);
     renderPlanetsGeology(data);
+    renderBorderColorsOnMobile(data);
   } catch (error) {
     console.error(error.message);
   }
