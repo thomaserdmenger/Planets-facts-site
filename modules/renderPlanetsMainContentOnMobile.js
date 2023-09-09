@@ -9,6 +9,8 @@ const planetsMenuOne = document.querySelector(".planets-menu-one");
 const planetsImgaes = document.querySelector(".planet-image");
 const planetImageGeology = document.querySelector(".planet-image-geology");
 const planetImages = document.querySelector(".planet-image");
+const subMenuItemOne = document.querySelector(".planets-menu-one-text");
+const menuItem = document.querySelector(".planets-menu-one-text");
 
 // Render main content
 export default async function renderPlanetsMainContentOnMobile() {
@@ -18,6 +20,36 @@ export default async function renderPlanetsMainContentOnMobile() {
   navBarLinksOnMobile.addEventListener("click", (e) => {
     data.forEach((item) => {
       if (e.target.textContent !== item.name) return;
+
+      // Change border colors on sub menu's first item
+      const planetName = item.name.toLowerCase();
+
+      switch (planetName) {
+        case "mercury":
+          menuItem.style.borderColor = "#419EBB";
+          break;
+        case "venus":
+          menuItem.style.borderColor = "#EDA249";
+          break;
+        case "earth":
+          menuItem.style.borderColor = "#6D2ED5";
+          break;
+        case "mars":
+          menuItem.style.borderColor = "#D14C32";
+          break;
+        case "jupiter":
+          menuItem.style.borderColor = "#D83A34";
+          break;
+        case "saturn":
+          menuItem.style.borderColor = "#CD5120";
+          break;
+        case "uranus":
+          menuItem.style.borderColor = "#1EC1A2";
+          break;
+        case "neptune":
+          menuItem.style.borderColor = "#2D68F0";
+          break;
+      }
 
       // Reset Planets
       planetImageGeology.classList.remove("planet-image-geology--mobile");
