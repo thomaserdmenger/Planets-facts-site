@@ -448,6 +448,14 @@ body {
     padding-top: 3rem;
   }
 
+  .planets-menu-two-text::before {
+    content: "Internal ";
+  }
+
+  .planets-menu-three-text::after {
+    content: " Geology";
+  }
+
   .planets-menu-items:first-of-type {
     border-bottom: none;
     padding: 0.5rem 0 0.5rem 1.25rem;
